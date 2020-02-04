@@ -27,7 +27,7 @@ class BootRedisClusterApplicationTests {
 
     @Test
     void test2() {
-        String name = redisTemplate.opsForValue().get("name").toString();
+        String name = redisTemplate.opsForValue().get("firstname").toString();
         System.out.println(name);
     }
 
