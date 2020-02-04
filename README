@@ -1,0 +1,6 @@
+**项目说明**
+
+本工程中含有三个springboot配置redis客户端的项目
+- boot-jedis:  基于jedis，适用于单节点redis的配置demo
+- boot-lettuce:  基于lettuce，适用于单节点redis的配置demo
+- boot-redis-cluster:  基于lettuce，适用于redis-cluster的配置demo，支持自动+定时刷新集群拓扑及读写分离
