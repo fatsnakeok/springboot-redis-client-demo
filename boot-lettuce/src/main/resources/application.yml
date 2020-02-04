@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: admin
+    timeout: 43200000 # 连接超时
+    block-when-exhausted: true
+    lettuce:
+      pool:
+        max-idle: 6 # 最大空闲数
+        min-idle: 2 # 最小空闲数
+        max-active: 10 # 最大连接数
+        max-wait: 1000
+      shutdown-timeout: 100 # 关闭超时时间

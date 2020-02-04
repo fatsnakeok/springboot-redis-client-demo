@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    database: 10
+    host: 127.0.0.1
+    port: 6379
+    password: admin
+    timeout: 43200000 # 连接超时
+    block-when-exhausted: true
+    jedis:
+      pool:
+        max-idle: 6 # 最大空闲数
+        min-idle: 2 # 最小空闲数
+        max-active: 10 # 最大连接数
+        max-wait: 1000
